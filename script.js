@@ -6,19 +6,19 @@ btnEle.addEventListener("click", function () {
 
   x=inputEle.value;
   console.log(x);
+  let lowerCase=x.toLowerCase();
+  check=lowerCase;
 
-  check=x;
-
-  let revStr=x.split("");
+  let revStr=lowerCase.split("");
   revStr.reverse();
   let revStr1=revStr.join("")
 
     
     if(revStr1==check){
-        abc.innerHTML=`${check} is a Palindrome`
+        abc.innerHTML=`${x} is a Palindrome`
     }
     else {
-        abc.innerHTML=`${check} is not a Palindrome`
+        abc.innerHTML=`${x} is not a Palindrome`
     } 
   }
 
